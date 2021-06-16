@@ -1,0 +1,111 @@
+:root{
+  --win1: 300px ;
+  --win2:calc( var(--win1) * 1.5);
+  --win3:calc( var(--win1) * 2);
+}
+
+
+.Game {
+  grid-row: 2;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 15vh;
+  width: 70vw;
+
+
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  display: grid;
+  justify-content: space-around;
+  padding-top: 3vh;
+}
+
+.bt-again{
+  height: 15%;
+  background-color:#DDD;
+  border:none;
+}
+
+.bt-again:hover {
+  color:red;
+}
+
+.sub-col {
+  display: flex;
+  flex-direction: column;
+}
+.Game h1 {
+  font-size: 50px;
+}
+
+#win1,#win2,#win3{
+    position: absolute;
+    background-color: rgba(255,255,255,0.1);
+    z-index: -1;
+    
+}
+
+#win1{
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width: var(--win1);
+  height: var(--win1);
+  border-radius: var(--win1);
+}
+
+
+#win2{
+  width: var(--win2);
+  height: var(--win2);
+  border-radius: var(--win2);
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+#win3{
+  width: var(--win3);
+  height: var(--win3);
+  border-radius: var(--win3);
+  transform: translate(-40%, -60%);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .Game {
+    grid-row: 2;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-bottom: 15vh;
+    width: 100vw;
+  }
+  .col-1,
+  .col-3 {
+    display: grid;
+    justify-content: space-around;
+    padding-top: 3vh;
+    grid-row: 1;
+  }
+  .col-2{
+    display: grid;
+    justify-content: space-around;
+    padding-top: 3vh;
+    grid-row: 2;
+    grid-column-end: span 2;
+  }
+}

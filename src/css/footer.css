@@ -1,0 +1,30 @@
+.footer{
+    grid-row:3;
+    text-align:end;
+}
+
+.bt-shRules{
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border:#fff 3px solid;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.bt-shRules:hover{
+    background-color: #fff;
+    color: var(--c_bg2);
+    border: 1px #fff;
+    padding: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+@media (max-width: 700px){
+    .footer{
+        text-align:center;
+    }
+}

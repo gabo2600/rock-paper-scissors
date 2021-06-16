@@ -1,0 +1,63 @@
+:root{
+    --c_red:#de3f5b;
+    --c_blue:#5471f3;
+    --c_yellow:#eca823;
+    --c_shadow:rgba(12,12,12,0.5);
+
+    --size:120px;
+    --sizeI:90px;
+    --sizeImg:80px;
+}
+
+
+
+.innerCircle{
+    background-color: #fff;
+    max-width:var(--sizeI);
+    max-height:var(--sizeI);
+    min-width:var(--sizeI);
+    min-height:var(--sizeI);
+    border-radius:var(--sizeI);
+    box-shadow: 0 10px var(--c_shadow) inset;
+    display:flex;
+    align-self: center;
+    justify-content:center;
+}
+
+
+.innerCircle img{
+    max-height: var(--sizeImg);
+
+}
+
+.icon{
+    display:grid;
+    justify-content:center;
+    align-self: center;
+    max-width:var(--size);
+    max-height:var(--size);
+    min-width:var(--size);
+    min-height:var(--size);
+    border-radius:var(--sizeI);
+    border: none;
+    box-shadow: 0 -10px var(--c_shadow) inset;
+
+}
+
+.red{
+    background-color:var(--c_red);
+}
+
+.blue{
+    background-color:var(--c_blue);
+}
+
+.yellow{
+    background-color:var(--c_yellow);
+}
+
+
+
+button.red:hover, button.blue:hover , button.yellow:hover{
+    filter: brightness(60%);
+}
